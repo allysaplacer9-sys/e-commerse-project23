@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #e8e8e8;
+
+    font-family: Arial, sans-serif;
+}
+
+/* CARD */
+
+.card {
+    width: 360px;
+
+    padding: 30px;
+
+    background: #171717;
+
+    border: 5px solid #000;
+    border-radius: 20px;
+
+    box-shadow: 12px 12px 0 #000;
+
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 17px 17px 0 #000;
+}
+
+/* TITLE */
+
+.card-title {
+    position: relative;
+
+    margin-bottom: 12px;
+
+    color: white;
+
+    text-align: center;
+
+    font-size: 28px;
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    overflow: hidden;
+}
+
+.card-title::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+    left: 5%;
+
+    width: 90%;
+    height: 3px;
+
+    background: white;
+
+    transform: translateX(-110%);
+
+    transition: 0.3s ease;
+}
+
+.card:hover .card-title::after {
+    transform: translateX(0);
+}
+
+/* DESCRIPTION */
+
+.card-content {
+    margin-bottom: 25px;
+
+    color: #aaa;
+
+    text-align: center;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* FORM */
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+/* INPUT */
+
+.field {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px;
+
+    background: #171717;
+
+    border: 1px solid #333;
+
+    border-radius: 25px;
+
+    box-shadow: inset 2px 5px 10px #050505;
+
+    transition: 0.3s ease;
+}
+
+.field:focus-within {
+    border-color: white;
+
+    transform: scale(1.03);
+}
+
+.input-icon {
+    width: 20px;
+    height: 20px;
+
+    fill: white;
+
+    flex-shrink: 0;
+}
+
+.input-field {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 15px;
+}
+
+.input-field::placeholder {
+    color: #888;
+}
+
+/* RESET BUTTON */
+
+.reset-button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #252525;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.reset-button:hover {
+    background: white;
+    color: black;
+}
+
+/* BACK TO LOGIN */
+
+.back-button {
+    display: block;
+
+    width: 100%;
+
+    padding: 10px;
+
+    text-align: center;
+
+    background: transparent;
+
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    border-radius: 6px;
+
+    transition: 0.3s ease;
+}
+
+.back-button:hover {
+    background: #252525;
+    color: white;
+}
+
+/* MOBILE */
+
+@media (max-width: 450px) {
+
+    .card {
+        width: 90%;
+    }
+
+}

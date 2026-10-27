@@ -1,0 +1,272 @@
+body {
+  animation: faceSlideUp 1s ease-out;
+}
+
+@keyframes faceSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.contact-heading {
+
+ from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+
+   
+  }
+}
+h3 {
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid black;
+  font-family: monospace;
+
+  animation:
+    typing 3s steps(25, end),
+    blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.user-profile {
+    width: 131px;
+    height: 51px;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 15px;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    background: linear-gradient(
+        to bottom right,
+        #2e8eff 0%,
+        rgba(46, 142, 255, 0) 30%
+    );
+
+    background-color: rgba(46, 142, 255, 0.2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-profile:hover,
+.user-profile:focus {
+    background-color: rgba(46, 142, 255, 0.7);
+
+    box-shadow:
+        0 0 10px rgba(46, 142, 255, 0.5);
+
+    outline: none;
+}
+
+.user-profile-inner {
+    width: 127px;
+    height: 47px;
+
+    border-radius: 13px;
+
+    background-color: #383131;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    color: #fff;
+    font-weight: 600;
+}
+
+.user-profile-inner svg {
+    width: 25px;
+    height: 25px;
+
+    fill: #fff;
+
+    transition: transform 0.3s ease;
+}
+
+/* Arrow moves slightly when hovering */
+
+.user-profile:hover svg {
+    transform: translateX(-4px);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(Dvořák.jpe);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #28356d;
+}
+
+
+.contact-section {
+    width: 100%;
+    padding: 55px 30px;
+}
+
+
+
+.contact-heading {
+    text-align: center;
+    
+    margin-bottom: 36px;
+}
+
+.contact-heading p {
+    color: #3b9acb;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.contact-heading h1 {
+    color: #28356d;
+    font-family: Georgia, serif;
+    font-size: 40px;
+}
+
+/* CARDS CONTAINER */
+
+.contact-container {
+    max-width: 1120px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+
+.contact-card {
+    height: 300px;
+    padding: 27px 17px;
+
+    background: #c4d4ee;
+
+    transition: all 0.3s ease;
+
+    cursor: pointer;
+}
+
+/* DARK BLUE CARD */
+
+.contact-card.active {
+    background: #c4d4ee;
+    color: white;
+}
+
+/* HOVER */
+
+.contact-card:hover {
+    background: #767ae3;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* ICON */
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 10x;
+    height: 35px;
+    color: #2e3275;
+
+    transition: all 0.3s ease;
+}
+
+.contact-card.active .icon,
+.contact-card:hover .icon {
+    color:rgb(20, 43, 94);
+}
+
+/* CARD TITLE */
+
+.contact-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: #28356d;
+}
+
+.contact-card.active h3,
+.contact-card:hover h3 {
+    color: rgb(20, 43, 94);
+}
+
+/* CARD TEXT */
+
+.contact-card p {
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 17px;
+    color: #38456e;
+}
+
+.contact-card.active p,
+.contact-card:hover p {
+    color:rgb(20, 43, 94);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .contact-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .contact-section {
+        padding: 40px 20px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+}

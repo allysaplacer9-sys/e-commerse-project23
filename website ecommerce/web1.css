@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  min-height: 200vh; /* makes the page 2x the screen height */
+  
+  
+  background-image: url("bruh.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+
+}
+.bg-image {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border-radius: 50%;
+  margin: 0px;
+  margin-top: 40px;
+}
+
+.h2lol{
+  font-size: 40px;
+ animation: slideUp 1s ease-out forwards; 
+
+}
+.wilcome{
+  font-size: 22px;
+ animation: slideUp 1s ease-out 0.4 forwards; 
+  opacity: 0;
+}
+/*text animatin*/
+
+.h3heading {
+  text-align: center;
+  padding-top: 100px;
+  animation: slideUp 1s ease-out forwards;
+  position: relative;
+  top: 130px;
+}
+
+/* Heading */
+.h3heading {
+  font-size: 30px;
+  margin-bottom: 10px;
+  display: inline-block;
+   
+    display: inline-block;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: bold;
+    background: rgba(20, 45, 75, 0.65);
+    padding: 6px 14px;
+    border-radius: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+
+}
+
+
+/* First paragraph */
+.animatidtex {
+  font-size: 22px;
+
+  opacity: 0;
+  animation: slideUp 1s ease-out 0.8s forwards;
+}
+
+/*pic*/
+.uhh{
+ position: relative;
+ bottom: 80px;
+ left: 400px;
+ height: 300px;
+ width: 540px;
+ margin-right: 180px;
+ background: rgba(17, 66, 106, 0.95);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    opacity: 0;
+   animation: slideUp 1s ease-out 0.8s forwards;
+  }
+
+/* Button */
+.fancy {
+  position: relative;
+  display: inline-block;
+
+  margin-top: 20px;
+  padding: 15px 30px;
+
+  text-decoration: none;
+  color: black;
+
+  opacity: 0;
+  animation: slideUp 1s ease-out 1.3s forwards;
+}
+
+
+/* Slide Up Animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* Navbar Container */
+.nav-links a {
+  color: #233449;
+  font-family: serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #0f3e50;
+  transform: translateY(-3px);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #19243e; /* Dark background */
+  padding: 1rem 2rem;
+}
+
+
+/* Logo */
+.logotext {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 5px;
+}
+.logo {
+  margin-left: 0px;
+  border-radius: 50%;
+  height: 60px;
+  width: 58px;
+}
+
+/* Center Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #cbd5e1;
+  font-family: serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+ h1,h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+   }
+    .wilcome{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    animation: slideUp 1s ease-out 0.5s forwards;
+    }
+
+    h2,.wilcome{
+    width: 80%;
+    max-width: 750px;
+    margin: 50px auto;
+
+    padding: 20px 30px;
+
+    text-align: center;
+    color: white;
+
+    /* ONE background for BOTH h1 and div */
+    background: rgba(15, 40, 70, 0.60);
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 5px;
+
+    text-shadow: 2px 2px 4px black;
+    }
+      
+ p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+   text-align: center;
+  position:relative;
+  right: 300px;
+  top: 210px;
+   width: 450px;
+    width: 450px;
+    padding: 30px;
+    margin: 50px auto;
+
+    background: rgba(5, 25, 60, 0.75);
+    border: 1px solid rgba(0, 170, 255, 0.5);
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 30px rgba(0, 150, 255, 0.25),
+        inset 0 0 20px rgba(0, 150, 255, 0.08);
+
+    backdrop-filter: blur(8px);
+
+    color: white;
+    text-align: center;
+ }
+    /*more products*/
+
+  .fancy {
+ background-color: rgb(203,255,203);
+ border: 2px solid #000;
+ border-radius: 0;
+ box-sizing: border-box;
+ color: #fff;
+ cursor: pointer;
+ display: inline-block;
+ 
+ font-weight: 700;
+ letter-spacing: 0.05em;
+ margin: 0;
+ outline: none;
+ overflow: visible;
+ padding: 1.25em 2em;
+ position: relative;
+ text-align: center;
+ text-decoration: none;
+ text-transform: none;
+ transition: all 0.3s ease-in-out;
+ user-select: none;
+ font-size: 13px;
+ margin-top: 40px;
+ margin-left: 546px;
+
+} 
+
+.fancy::before {
+ content: " ";
+ width: 1.5625rem;
+ height: 2px;
+ background: black;
+ top: 50%;
+ left: 1.5em;
+ position: absolute;
+ transform: translateY(-50%);
+ transform-origin: center;
+ transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+ font-size: 1.125em;
+ line-height: 1.33333em;
+ padding-left: 2em;
+ display: block;
+ text-align: left;
+ transition: all 0.3s ease-in-out;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: black;
+}
+
+.fancy .top-key {
+ height: 2px; 
+ width: 1.5625rem;
+ top: -2px;
+ left: 0.625rem;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+ height: 2px;
+ width: 1.5625rem;
+ right: 1.875rem;
+ bottom: -2px;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+ height: 2px;
+ width: 0.625rem;
+ right: 0.625rem;
+ bottom: -2px;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+ color: white;
+ background: black;
+}
+
+.fancy:hover::before {
+ width: 0.9375rem;
+ background: white;
+}
+
+.fancy:hover .text {
+ color: white;
+ padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+ left: -2px;
+ width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+ .fancy:hover .bottom-key-2 {
+ right: 0;
+ width: 0;
+}
+
+/*new produvts*/
+
+
